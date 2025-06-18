@@ -11,3 +11,21 @@ export function capitalize(str) {
 export function reverseStr(str) {
   return str.split('').reverse().join('');
 }
+
+export class Calculator {
+  add(a, b) {
+    return a + b;
+  }
+
+  sub(a, b) {
+    return a - b;
+  }
+
+  multiply(a, b) {
+    return a * b;
+  }
+
+  divide(a, b) {
+    return a / b;
+  }
+}
