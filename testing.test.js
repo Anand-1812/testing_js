@@ -1,4 +1,5 @@
 import { sum, capitalize, reverseStr, Calculator } from './teststing';
+import { caeserCipher } from './caeser_cipher';
 
 test('adds 1 + 2 to equal 3', () => {
   expect(sum(1, 2)).toBe(3);
@@ -22,3 +23,9 @@ test('checks caluclator validity', () => {
   expect(calc.multiply(2, 4)).toBe(8);
   expect(calc.divide(4, 2)).toBe(2);
 });
+
+// caeser cipher test
+test('caeser cipher ...', () => {
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+  expect(caeserCipher('xyz', 3, alphabet)).toBe('abc');
+})
